@@ -1,0 +1,632 @@
+
+
+{% extends "./base.html" %}
+{% load static %}
+{% block content_header %}
+<div class="content-header row">
+  <div class="content-header-left col-md-4 col-12 mb-2">
+    <h3 class="content-header-title">General</h3>
+  </div>
+  <div class="content-header-right col-md-8 col-12">
+    <div class="breadcrumbs-top float-md-right">
+      <div class="breadcrumb-wrapper mr-1">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item active">General Setting
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content_header %}
+
+{% block content_type %}
+<!-- <div class="row">
+  <div class="col-12 mt-3 mb-1">
+    <h4 class="text-uppercase">Add Product</h4>
+    <p>Cards support a wide variety of content, including images, text, list groups, links, and more. Mix and match
+      multiple
+      content types to create the card you need.</p>
+  </div>
+</div> -->
+{% endblock content_type %}
+<!--               
+                  
+            
+ -->
+
+{% block body_content %}
+
+<div class="container-fluid p-6">
+    <div class="border-bottom pb-4 mb-4"></div>
+   
+    <div class="row mb-8">
+      <div class="col-xl-3 col-lg-4 col-md-12 col-12">
+        <div class="mb-4 mb-lg-0">
+          <h4 class="mb-1">General Setting</h4>
+          <p class="mb-0 fs-5 text-muted">Profile configuration settings </p>
+        </div>
+
+      </div>
+
+      <div class="col-xl-9 col-lg-8 col-md-12 col-12">
+        <!-- card -->
+        <div class="card">
+          <!-- card body -->
+          <div class="card-body">
+            <div class=" mb-6">
+              <h4 class="mb-1">General Settings</h4>
+
+            </div>
+            <div class="row align-items-center mb-8">
+              <div class="col-md-3 mb-3 mb-md-0">
+                <h5 class="mb-0">Avatar</h5>
+              </div>
+              <div class="col-md-9">
+                <div class="d-flex align-items-center">
+                  <div class="me-3">
+                    <img src="../assets/images/avatar/avatar-5.jpg" class="rounded-circle avatar avatar-lg" alt="">
+                  </div>
+                  <div>
+                    <button type="submit" class="btn btn-outline-white
+                        me-1">Change</button>
+                    <button type="submit" class="btn btn-outline-white">Remove</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="row mb-8">
+              <div class="col-md-3 mb-3 mb-md-0">
+                <!-- heading -->
+                <h5 class="mb-0">Cover photo</h5>
+              </div>
+              <div class="col-md-9">
+                <!-- dropzone input -->
+                <div>
+                  <form action="#" class="dropzone mb-3 border-dashed dz-clickable">
+                    
+                  <div class="dz-default dz-message"><button class="dz-button" type="button">Drop files here to upload</button></div></form>
+                  <button type="submit" class="btn btn-outline-white">Change</button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- border -->
+              <div class="mb-6">
+                <h4 class="mb-1">Basic information</h4>
+
+              </div>
+              <form>
+                <!-- row -->
+
+                <div class="mb-3 row">
+                  <label for="fullName" class="col-sm-4 col-form-label
+                      form-label">Full name</label>
+                  <div class="col-sm-4 mb-3 mb-lg-0">
+                    <input type="text" class="form-control" placeholder="First name" id="fullName" required="">
+                  </div>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Last name" id="lastName" required="">
+                  </div>
+                </div>
+
+                <!-- row -->
+                <div class="mb-3 row">
+                  <label for="email" class="col-sm-4 col-form-label
+                      form-label">Email</label>
+                  <div class="col-md-8 col-12">
+                    <input type="email" class="form-control" placeholder="Email" id="email" required="">
+                  </div>
+                </div>
+                <!-- row -->
+                <div class="mb-3 row">
+                  <label for="phone" class="col-sm-4 col-form-label
+                      form-label">Phone <span class="text-muted">(Optional)</span></label>
+                  <div class="col-md-8 col-12">
+                    <input type="text" class="form-control" placeholder="Phone" id="phone" required="">
+                  </div>
+                </div>
+                <!-- row -->
+                <div class="mb-3 row">
+                  <label for="location" class="col-sm-4 col-form-label
+                      form-label">Location</label>
+
+                  <div class="col-md-8 col-12">
+                    <select class="form-select" id="location">
+                        <option selected="">Select Country</option>
+                        <option value="1">India</option>
+                        <option value="2">UK</option>
+                        <option value="3">USA</option>
+                      </select>
+                  </div>
+                </div>
+                <!-- row -->
+                <div class="mb-3 row">
+                  <label for="addressLine" class="col-sm-4 col-form-label
+                      form-label">Address line 1</label>
+
+
+                  <div class="col-md-8 col-12">
+                    <input type="text" class="form-control" placeholder="placeholder" id="addressLine" required="">
+                  </div>
+                </div>
+                <!-- row -->
+                <div class="mb-3 row">
+                  <label for="addressLineTwo" class="col-sm-4
+                      col-form-label form-label">Address line 2</label>
+                  <div class="col-md-8 col-12">
+                    <input type="text" class="form-control" placeholder="placeholder" id="addressLineTwo" required="">
+                  </div>
+                </div>
+                <!-- row -->
+                <div class="row align-items-center">
+                  <label for="zipcode" class="col-sm-4 col-form-label
+                      form-label">Zip code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info me-2 icon-xs"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></label>
+
+                  <div class="col-md-8 col-12">
+                    <input type="text" class="form-control" placeholder="placeholder" id="zipcode" required="">
+                  </div>
+                  <div class="offset-md-4 col-md-8 mt-4">
+                    <button type="submit" class="btn btn-primary"> Save
+                        Changes</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+    <div class="row mb-8">
+      <div class="col-xl-3 col-lg-4 col-md-12 col-12">
+        <div class="mb-4 mb-lg-0">
+          <h4 class="mb-1">Email Setting</h4>
+          <p class="mb-0 fs-5 text-muted">Add an email settings to profile </p>
+        </div>
+
+      </div>
+
+      <div class="col-xl-9 col-lg-8 col-md-12 col-12">
+        <!-- card -->
+        <div class="card" id="edit">
+          <!-- card body -->
+          <div class="card-body">
+            <div class="mb-6">
+              <h4 class="mb-1">Email</h4>
+
+            </div>
+            <form>
+              <!-- row -->
+              <div class="mb-3 row">
+                <!-- label -->
+                <label for="newEmailAddress" class="col-sm-4
+                    col-form-label form-label">New email</label>
+                <div class="col-md-8 col-12">
+                  <!-- input -->
+                  <input type="email" class="form-control" placeholder="Enter your email address" id="newEmailAddress" required="">
+                </div>
+                <!-- button -->
+                <div class="offset-md-4 col-md-8 col-12 mt-3">
+                  <button type="submit" class="btn btn-primary">Save
+                      Changes</button>
+                </div>
+              </div>
+            </form>
+
+            <div class="mb-6 mt-6">
+              <h4 class="mb-1">Change your password</h4>
+
+            </div>
+            <form>
+              <!-- row -->
+              <div class="mb-3 row">
+                <label for="currentPassword" class="col-sm-4
+                    col-form-label form-label">Current password</label>
+
+                <div class="col-md-8 col-12">
+                  <input type="password" class="form-control" placeholder="Enter Current password" id="currentPassword" required="">
+                </div>
+              </div>
+              <!-- row -->
+              <div class="mb-3 row">
+                <label for="currentNewPassword" class="col-sm-4
+                    col-form-label form-label">New password</label>
+
+                <div class="col-md-8 col-12">
+                  <input type="password" class="form-control" placeholder="Enter New password" id="currentNewPassword" required="">
+                </div>
+              </div>
+              <!-- row -->
+              <div class="row align-items-center">
+                <label for="confirmNewpassword" class="col-sm-4
+                    col-form-label form-label">Confirm new password</label>
+                <div class="col-md-8 col-12 mb-2 mb-lg-0">
+                  <input type="password" class="form-control" placeholder="Confirm new password" id="confirmNewpassword" required="">
+                </div>
+                <!-- list -->
+                <div class="offset-md-4 col-md-8 col-12 mt-4">
+                  <h6 class="mb-1">Password requirements:</h6>
+                  <p>Ensure that these requirements are met:</p>
+                  <ul>
+                    <li> Minimum 8 characters long the more, the better</li>
+                    <li>At least one lowercase character</li>
+                    <li>At least one uppercase character</li>
+                    <li>At least one number, symbol, or whitespace character
+                    </li>
+                  </ul>
+                  <button type="submit" class="btn btn-primary">Save
+                      Changes</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="row mb-8">
+      <div class="col-xl-3 col-lg-4 col-md-12 col-12">
+        <div class="mb-4 mb-lg-0">
+          <h4 class="mb-1">Notifications</h4>
+          <p class="mb-0 fs-5 text-muted">Change notification settings </p>
+        </div>
+
+      </div>
+
+      <div class="col-xl-9 col-lg-8 col-md-12 col-12">
+        <!-- card -->
+
+        <div class="card">
+          <!-- card body -->
+          <div class="card-body">
+            <div class="mb-6">
+              <h4 class="mb-1">Notification for email, mobile &amp; Slack</h4>
+            </div>
+            <div class="mb-4">
+              <!-- alert -->
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                To start using Slack for personal notifications, you should first connect Slack.
+                <button type="submit" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+
+    </button>
+              </div>
+            </div>
+            <!-- table -->
+            <div class="table-responsive mb-3">
+              <table class="table text-nowrap">
+                <thead class="table-light">
+                  <tr>
+                    <th class="w-75">Activity &amp; Conversation</th>
+                    <th><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone icon-sm me-2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg></th>
+                    <th><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-slack icon-sm me-2"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"></path><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"></path><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"></path><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"></path><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"></path><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"></path><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"></path></svg></th>
+                    <th><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail icon-sm me-2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+
+                    <td class="border-top-0">
+
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckOne">
+                        <label class="form-check-label" for="customCheckOne"></label>
+                      </div>
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckTwo">
+                        <label class="form-check-label" for="customCheckTwo"></label>
+                      </div>
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckThree">
+                        <label class="form-check-label" for="customCheckThree"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+
+                    <td class="border-top-0">
+                      When a Files is shared with a team
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckFour">
+                        <label class="form-check-label" for="customCheckFour"></label>
+                      </div>
+                    </td>
+                    <td class="border-top-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus text-muted icon-sm"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckFive">
+                        <label class="form-check-label" for="customCheckFive"></label>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+
+                    <td class="border-top-0">
+                      When someone requests access to my design
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckSix">
+                        <label class="form-check-label" for="customCheckSix"></label>
+                      </div>
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckSeven">
+                        <label class="form-check-label" for="customCheckSeven"></label>
+                      </div>
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckEight">
+                        <label class="form-check-label" for="customCheckEight"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+
+                    <td class="border-top-0">
+                      When someone comments in threads I’m following
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckNine">
+                        <label class="form-check-label" for="customCheckNine"></label>
+                      </div>
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckTen">
+                        <label class="form-check-label" for="customCheckTen"></label>
+                      </div>
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckEleven">
+                        <label class="form-check-label" for="customCheckEleven"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+
+                    <td class="border-top-0">
+                      When someone @mentions me in any comments
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckTwelve">
+                        <label class="form-check-label" for="customCheckTwelve"></label>
+                      </div>
+                    </td>
+                    <td class="border-top-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus text-muted icon-sm"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </td>
+                    <td class="border-top-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus text-muted icon-sm"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <div class="table-responsive mb-3">
+              <table class="table text-nowrap">
+                <thead class="table-light">
+                  <tr>
+                    <th class="w-75">Project activity activity</th>
+                    <th><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone me-2 icon-sm"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg></th>
+                    <th><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-slack me-2 icon-sm"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"></path><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"></path><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"></path><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"></path><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"></path><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"></path><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"></path></svg></th>
+                    <th><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail me-2 icon-sm"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+
+                    <td class="border-top-0">
+                      When someone adds me to a project
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckThirteen">
+                        <label class="form-check-label" for="customCheckThirteen"></label>
+                      </div>
+                    </td>
+                    <td class="border-top-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus text-muted icon-sm"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckFourteen">
+                        <label class="form-check-label" for="customCheckFourteen"></label>
+                      </div>
+                    </td>
+                  </tr>
+
+
+                </tbody>
+              </table>
+            </div>
+            <div class="table-responsive">
+              <table class="table mb-0 text-nowrap">
+                <thead class="table-light">
+                  <tr>
+                    <th class="w-75">Team activity
+                    </th>
+                    <th><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone me-2 icon-sm"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg></th>
+                    <th><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-slack me-2 icon-sm"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"></path><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"></path><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"></path><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"></path><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"></path><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"></path><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"></path></svg></th>
+                    <th><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail me-2 icon-sm"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+
+                    <td class="border-top-0">
+                      When my invitees sign up
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckSixteen">
+                        <label class="form-check-label" for="customCheckSixteen"></label>
+                      </div>
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckSeventeen">
+                        <label class="form-check-label" for="customCheckSeventeen"></label>
+                      </div>
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckEighteen">
+                        <label class="form-check-label" for="customCheckEighteen"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+
+                    <td class="border-top-0">
+                      When someone requests access to my team
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckNineteen">
+                        <label class="form-check-label" for="customCheckNineteen"></label>
+                      </div>
+                    </td>
+                    <td class="border-top-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus text-muted icon-sm"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </td>
+                    <td class="border-top-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckTwenty">
+                        <label class="form-check-label" for="customCheckTwenty"></label>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+
+                    <td class="border-bottom-0">
+                      When someone invites me to a team
+                    </td>
+                    <td class="border-bottom-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckTwentyone">
+                        <label class="form-check-label" for="customCheckTwentyone"></label>
+                      </div>
+                    </td>
+                    <td class="border-bottom-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckTwentytwo">
+                        <label class="form-check-label" for="customCheckTwentytwo"></label>
+                      </div>
+                    </td>
+                    <td class="border-bottom-0">
+                      <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="customCheckTwentythree">
+                        <label class="form-check-label" for="customCheckTwentythree"></label>
+                      </div>
+                    </td>
+                  </tr>
+
+
+                </tbody>
+              </table>
+            </div>
+            <hr class="my-6">
+            <div class="row">
+              <div class="col-xl-6 col-md-12 mb-3">
+                <label for="notification" class="form-label">When should
+      we send you notifications?</label>
+                <select class="form-select" id="notification">
+      <option selected="">Always</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+              </div>
+              <div class="col-xl-3 col-md-6 mb-3">
+                <label for="dailyDigest" class="form-label">Daily Digest
+    </label>
+                <select class="form-select" id="dailyDigest">
+      <option selected="">Everyday</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+              </div>
+              <div class="col-xl-3 col-md-6 mb-3">
+                <label for="time" class="form-label">Time</label>
+                <select class="form-select" id="time">
+      <option selected="">2PM
+      </option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+              </div>
+              <div class="col-xl-3 col-md-12 ">
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-lg-4 col-md-12 col-12">
+        <div class="mb-4 mb-lg-0">
+          <h4 class="mb-1">Delete Account</h4>
+          <p class="mb-0 fs-5 text-muted">Easily set up social media accounts</p>
+        </div>
+
+      </div>
+
+      <div class="col-xl-9 col-lg-8 col-md-12 col-12">
+        <!-- card -->
+
+        <div class="card mb-6">
+          <!-- card body -->
+          <div class="card-body">
+            <div class="mb-6">
+              <h4 class="mb-1">Danger Zone </h4>
+
+            </div>
+            <div>
+              <!-- text -->
+              <p>Delete any and all content you have, such as articles, comments, your reading list or chat messages. Allow your username to become available to anyone.</p>
+              <a href="#" class="btn btn-danger">Delete Account</a>
+              <p class="small mb-0 mt-3">Feel free to contact with any <a href="#">dashui@example.com</a> questions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+   
+  
+
+{% endblock body_content %}
